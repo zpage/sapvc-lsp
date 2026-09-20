@@ -1,0 +1,13 @@
+# Rust build output
+target/
+
+# Real material packages must never be committed — only the DEMO_MATERIAL
+# sample ships with the repo.
+material-data/*
+!material-data/DEMO_MATERIAL/
+
+# Internal build helper (path-specific)
+build_material_pkg.py
+
+__pycache__/
+*.pyc

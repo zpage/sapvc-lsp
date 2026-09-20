@@ -1,0 +1,15 @@
+[package]
+name = "sapvc-lsp"
+version = "0.1.0"
+description = "LSP server for SAP Variant Configuration (LO-VC/AVC) dependency files"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std", "io-util"] }
+tower-lsp = "0.20"
+tree-sitter = "0.24"
+tree-sitter-sapvc = { path = "../tree-sitter-sapvc/bindings/rust" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1"

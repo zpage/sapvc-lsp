@@ -1,0 +1,70 @@
+{
+ "material": "DEMO_MATERIAL",
+ "system": "DEMO",
+ "chars": [
+  "DEMO_COLOR",
+  "DEMO_WIDTH",
+  "DEMO_HEIGHT",
+  "DEMO_DOOR_TYPE",
+  "DEMO_MOTOR"
+ ],
+ "tables": [
+  "TB_DEMO_SIZE",
+  "TB_DEMO_OPTIONS"
+ ],
+ "objects": [
+  "ET1",
+  "ET2",
+  "ETO"
+ ],
+ "deps": [
+  {
+   "name": "PRO_DEMO_DEFAULT",
+   "type": "PROC"
+  },
+  {
+   "name": "PRO_DEMO_DIMENSION",
+   "type": "PROC"
+  },
+  {
+   "name": "NET_DEMO_MAIN",
+   "type": "CNET"
+  },
+  {
+   "name": "CONS_DEMO_CHECK",
+   "type": "CONST"
+  }
+ ],
+ "char_values": {
+  "DEMO_COLOR": [
+   "RED",
+   "BLUE",
+   "GREEN"
+  ],
+  "DEMO_DOOR_TYPE": [
+   "A",
+   "B",
+   "C"
+  ]
+ },
+ "classes": [
+  "DEMO_CLASS_BASIC",
+  "DEMO_CLASS_OPTIONS"
+ ],
+ "vt_chars": {
+  "TB_DEMO_SIZE": {
+   "chars": [
+    "DEMO_WIDTH",
+    "DEMO_HEIGHT"
+   ],
+   "key_fields": [
+    "DEMO_WIDTH"
+   ]
+  }
+ },
+ "variant_functions": [
+  "SAP_VF_COMPARE_STRINGS",
+  "SAP_VF_CHAR_TO_NUM"
+ ],
+ "char_refs": {}
+}
